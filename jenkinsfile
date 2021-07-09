@@ -1,0 +1,6 @@
+node {
+        stage(' build ') {
+            bat " docker image build ubuntu "
+            bat " docker container run ubuntu"
+        }
+}
