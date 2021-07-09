@@ -1,6 +1,6 @@
 node {
         stage(' build ') {
-            def myImage = docker.build(, dockerfile)
+            def myImage = docker.build(dockerfile)
             bat " docker container run ubuntu:18.04"
         }
 }
