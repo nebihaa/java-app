@@ -1,6 +1,6 @@
 node {
         stage(' build ') {
-            bat " docker image build -t test  ."
+            def myImage = docker.image ('ubuntu')
             bat " docker container run ubuntu"
         }
 }
