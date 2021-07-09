@@ -1,6 +1,6 @@
 node {
         stage(' build ') {
             def myImage =  Image.pull(ubuntu:18.04)
-            bat " docker container run ubuntu"
+            bat " docker container run ubuntu:18.04"
         }
 }
