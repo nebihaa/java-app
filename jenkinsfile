@@ -4,7 +4,7 @@ node {
           myImage.pull()
           myImage.run()
           myImage.inside {
-          bat 
+          bat apt-get install default-jre -y
           }
       
         }
