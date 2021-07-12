@@ -4,6 +4,5 @@ node {
           myImage.pull()
           myImage.run()
           
-         
         }
 }
