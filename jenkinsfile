@@ -1,6 +1,8 @@
 node {
         stage(' build ') {
-          def myImage = docker.image("nebiha11/java-app2:1.1").run()
+          def myImage = docker.image("nebiha11/java-app2:1.1")
+          myImage.pull()
+          myImage.run()
         
           
 
