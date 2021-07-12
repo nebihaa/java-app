@@ -3,7 +3,9 @@ node {
           def myImage = docker.image("nebiha11/test:1.1")
           myImage.pull()
           myImage.run()
-          myImage.inside ()
+          myImage.inside {
+          bat 
+          }
       
         }
 }
