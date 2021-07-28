@@ -1,9 +1,9 @@
 node {
         stage(' build ') {
-         // def myImage = docker.image("nebiha11/test:1.1")
-         // myImage.pull()
-         // myImage.run()
-         sh ' docker pull nebiha11/test/:1.1'
+          def myImage = docker.image("nebiha11/test:1.1")
+          myImage.pull()
+          myImage.run()
+         
   
           
       
