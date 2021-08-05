@@ -1,9 +1,5 @@
 node {
-stage('clean') {
-        cheackout scm
-        cleanWs()
-    }
-  
+
     stage('build') {
 
         def myImage = docker.build (' image-java-app') 
