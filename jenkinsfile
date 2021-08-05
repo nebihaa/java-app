@@ -2,7 +2,8 @@ node {
 
     stage('build') {
 
-        def myImage = docker.build (' image-java-app') 
+        def myImage = docker.build('image-java-app')
+        
     }
   }
 
