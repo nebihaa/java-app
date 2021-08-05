@@ -1,7 +1,7 @@
 node {
     stage('build') {
-        git 'https://github.com/nebihaa/java-app.git'
-        def myImage = docker.build('image-java-app')
+       // git 'https://github.com/nebihaa/java-app.git'
+        def myImage = docker.build'image-java-app'
         
     }
   }
