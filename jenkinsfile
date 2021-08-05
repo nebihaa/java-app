@@ -1,12 +1,11 @@
-node {
-        stage(' build ') {
-          def myImage = docker.image("nebiha11/test:1.1")
-          myImage.pull()
-          myImage.run()
-         
-  
-          
-      
-      
-        }
+pipeline {
+    agent any 
+    stage('clear') {
+        cheackout scm
+        cleanWs()
+    }
+    stage() {
+        def myImage = docker.build (' image-java-app')
+        
+    }
 }
