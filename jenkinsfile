@@ -1,11 +1,14 @@
 pipeline {
     agent any 
-    stage('clear') {
+    stages('clear') {
+    step{
         cheackout scm
         cleanWs()
     }
-    stage() {
-        def myImage = docker.build (' image-java-app')
-        
+   }
+    stage('build') {
+    step{
+        def myImage = docker.build (' image-java-app') 
     }
+  }
 }
